@@ -1,0 +1,27 @@
+{
+  "name": "flights-weather-report",
+  "version": "1.0.0",
+  "description": "Algorithm that allows to obtain departure and arrival cities climate report for a given list of flights that leave the same day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yexhoo/flights-weather-report.git"
+  },
+  "keywords": [
+    "algorthm",
+    "flights",
+    "departure",
+    "arrival",
+    "weather",
+    "report"
+  ],
+  "author": "yexhoo (Josue Nolasco Miranda)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yexhoo/flights-weather-report/issues"
+  },
+  "homepage": "https://github.com/yexhoo/flights-weather-report#readme"
+}
