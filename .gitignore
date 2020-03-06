@@ -103,4 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-flights.csv
+input.csv
+output.json
+cache.json
