@@ -1,0 +1,9 @@
+"origin","destination","airline","flight_num","origin_iata_code","origin_name","origin_latitude","origin_longitude","destination_iata_code","destination_name","destination_latitude","destination_longitude"
+"TLC","MTY","4O","104","TLC","Licenciado Adolfo Lopez Mateos International Airport",19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
+"TLC","MTY","4O","104","TLC","Licenciado Adolfo Lopez Mateos International Airport",19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
+19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
+"TLC","MTY","4O","104","TLC","Licenciado Adolfo Lopez Mateos International Airport",19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
+19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
+19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
+"TLC","MTY","4O","104","TLC","Licenciado Adolfo Lopez Mateos International Airport",19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
+"TLC",,,,,,,,,,-100.107
