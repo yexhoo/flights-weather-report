@@ -18,20 +18,10 @@ exports.data = (content) => {
         throw new Error("Empty file")
     }
 
-    const lines = this.linesWithErros(content)
-    if (lines.length) {
+    const linesWithErros = content
+        .map(line => line.length != constants.HEADERS.length || line.some((n) => (new String(n))))
+
+    if (linesWithErros.length) {
         throw new Error("Several lines does not contain required data")
     }
-}
-
-exports.linesWithErros = (content) => {
-
-    const linesWithErros = []
-    content.forEach(line => {
-        if (line.length != constants.HEADERS.length || line.some((n) => (new String(n)))) {
-            linesWithErros.push(line)
-        }
-    });
-
-    return linesWithErros
 }
