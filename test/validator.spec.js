@@ -2,7 +2,7 @@ const expect = require("chai").expect
 const validator = require("../src/validator")
 const extractor = require("../src/extractor")
 
-describe('Light Distribution Validation Test', () => {
+describe('Validator', () => {
 
     let testFile, resources = __dirname.concat("/resources/files/");
 
@@ -18,20 +18,19 @@ describe('Light Distribution Validation Test', () => {
 
     it('Empty File', () => {
         testFile = resources.concat('empty-file.csv')
-        const content = extractor.get(testFile)
+        const content = extractor.readFile(testFile)
         expect(() => validator.data(content)).to.throw(Error, "Empty file")
     });
 
-    it('Empty only headers', () => {
+    it('Empty file, headers removed', () => {
         testFile = resources.concat('only-headers.csv')
-        const content = extractor.get(testFile)
+        const content = extractor.readFile(testFile)
         expect(() => validator.data(content)).to.throw(Error, "Empty file")
     });
 
     it('Some lines does not contain required data ', () => {
         testFile = resources.concat('required-values.csv')
-        const content = extractor.get(testFile)
+        const content = extractor.readFile(testFile)
         expect(() => validator.data(content)).to.throw(Error, "Several lines does not contain required data")
     });
-
 });
