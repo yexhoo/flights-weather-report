@@ -28,14 +28,18 @@ const airPort = (iata, latitude, longitude) => {
         "iata": iata,
         "latitude": latitude,
         "longitude": longitude,
-        "weather": {}
+        "weather": null
     }
 }
+
+const ENDPOINT_TOKET = 'a065225a805cdb89b19e56d08925f0a0'
+const WEATHER_ENDPOINT = `http://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&appid=${ENDPOINT_TOKET}`
 
 module.exports = {
     HEADERS: HEADERS,
     AIR_LINE: AIR_LINE,
     FLIGHT_NUM: FLIGHT_NUM,
     ticket: ticket,
-    airPort: airPort
+    airPort: airPort,
+    WEATHER_ENDPOINT: WEATHER_ENDPOINT
 }

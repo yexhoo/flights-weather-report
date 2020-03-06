@@ -12,8 +12,7 @@ exports.find = (superset, subset) => superset.some(r => subset.includes(r))
 exports.tickets = (source) => {
 
     const content = new Map();
-    source.forEach(line => {
-
+    for (const line of source) {
         if (line[constants.AIR_LINE] && line[constants.FLIGHT_NUM]) {
 
             const key = line[constants.AIR_LINE] + line[constants.FLIGHT_NUM]
@@ -21,7 +20,7 @@ exports.tickets = (source) => {
                 content.set(key, constants.ticket(line))
             }
         }
-    });
+    }
 
     return content
 }
@@ -30,7 +29,6 @@ exports.airPorts = (tickets) => {
 
     const airPorts = new Map();
     const elements = tickets.values();
-
     for (const e of elements) {
         if (!airPorts.has(e.originIata)) {
             airPorts.set(e.originIata,
