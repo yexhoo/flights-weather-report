@@ -29,6 +29,7 @@
     "mocha": "^7.1.0"
   },
   "dependencies": {
+    "jsonfile": "^6.0.0",
     "sync-rest-client": "^1.0.3"
   }
 }
