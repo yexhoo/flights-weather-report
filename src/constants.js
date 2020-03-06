@@ -2,6 +2,7 @@ const AIR_LINE = 2
 const FLIGHT_NUM = 3
 const ENDPOINT_TOKET = 'a065225a805cdb89b19e56d08925f0a0'
 const WEATHER_ENDPOINT = `http://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&appid=${ENDPOINT_TOKET}`
+const CACHE_FILE = "cache.json" 
 
 const HEADERS = [
     "origin",
@@ -51,5 +52,6 @@ module.exports = {
     FLIGHT_NUM: FLIGHT_NUM,
     ticket: ticket,
     airPort: airPort,
-    WEATHER_ENDPOINT: WEATHER_ENDPOINT
+    WEATHER_ENDPOINT: WEATHER_ENDPOINT,
+    CACHE_FILE: CACHE_FILE
 }

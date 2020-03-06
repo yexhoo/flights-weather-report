@@ -1,8 +1,11 @@
 const util = require("util")
 const rest = require("./rest")
 const constants = require("./constants")
+const cache = require("./cache")
 
 exports.updateAirports = (airPorts) => {
+
+    airPorts = this.cachedAirports(airPorts)
 
     let entries = airPorts.entries();
 
@@ -12,7 +15,7 @@ exports.updateAirports = (airPorts) => {
             const iata = airport[0]
             const url = util
                 .format(constants.WEATHER_ENDPOINT, airport[1].latitude, airport[1].longitude)
-            
+
             const response = rest.get(url)
 
             if (response.data) {
@@ -22,6 +25,8 @@ exports.updateAirports = (airPorts) => {
             }
         }
     }
+
+    cache.save(airPorts)
 
     return airPorts
 }
@@ -37,4 +42,15 @@ exports.updateTickets = (tickets, airPorts) => {
     }
 
     return list
+}
+
+exports.cachedAirports = (airPorts) => {
+
+    const cached = cache.get()
+
+    cached.airPorts.forEach(airport => {
+        airPorts.set(airport.iata, airport)
+    });
+
+    return airPorts
 }
