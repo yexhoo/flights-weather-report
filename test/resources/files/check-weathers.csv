@@ -2,10 +2,17 @@
 "TLC","MTY","4O","104","TLC","Licenciado Adolfo Lopez Mateos International Airport",19.3371,-99.566,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107
 "MTY","TLC","4O","119","MTY","General Mariano Escobedo International Airport",25.7785,-100.107,"TLC","Licenciado Adolfo Lopez Mateos International Airport",19.3371,-99.566
 "MTY","MEX","4O","2117","MTY","General Mariano Escobedo International Airport",25.7785,-100.107,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
+"MTY","MEX","4O","2117","MTY","General Mariano Escobedo International Airport",25.7785,-100.107,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
 "MEX","GDL","4O","2210","MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721,"GDL","Don Miguel Hidalgo Y Costilla International Airport",20.5218,-103.311
+"GDL","MEX","4O","2211","GDL","Don Miguel Hidalgo Y Costilla International Airport",20.5218,-103.311,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
 "CUN","MEX","4O","2301","CUN","Cancún International Airport",21.0365,-86.8771,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
+"CUN","MEX","4O","2301","CUN","Cancún International Airport",21.0365,-86.8771,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
+"CTM","MEX","4O","2547","CTM","Chetumal International Airport",18.5047,-88.3268,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
+"CTM","MEX","4O","2547","CTM","Chetumal International Airport",18.5047,-88.3268,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
 "CTM","MEX","4O","2549","CTM","Chetumal International Airport",18.5047,-88.3268,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
 "VER","MEX","4O","2550","VER","General Heriberto Jara International Airport",19.1459,-96.1873,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
+"VER","MEX","4O","2550","VER","General Heriberto Jara International Airport",19.1459,-96.1873,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
 "PVR","MEX","4O","2764","PVR","Licenciado Gustavo Díaz Ordaz International Airport",20.6801,-105.254,"MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721
+"MEX","BOG","4O","2930","MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721,"BOG","El Dorado International Airport",4.70159,-74.1469
 "MEX","BOG","4O","2930","MEX","Licenciado Benito Juarez International Airport",19.4363,-99.0721,"BOG","El Dorado International Airport",4.70159,-74.1469
 "AGU","MTY","4O","4191","AGU","Jesús Terán Paredo International Airport",21.7056,-102.318,"MTY","General Mariano Escobedo International Airport",25.7785,-100.107

@@ -1,10 +1,21 @@
-const HEADERS = [
-    "origin", "destination", "airline", "flight_num",
-    "origin_iata_code", "origin_name", "origin_latitude", "origin_longitude",
-    "destination_iata_code", "destination_name", "destination_latitude", "destination_longitude"]
-
 const AIR_LINE = 2
 const FLIGHT_NUM = 3
+const ENDPOINT_TOKET = 'a065225a805cdb89b19e56d08925f0a0'
+const WEATHER_ENDPOINT = `http://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&appid=${ENDPOINT_TOKET}`
+
+const HEADERS = [
+    "origin",
+    "destination",
+    "airline",
+    "flight_num",
+    "origin_iata_code",
+    "origin_name",
+    "origin_latitude",
+    "origin_longitude",
+    "destination_iata_code",
+    "destination_name",
+    "destination_latitude",
+    "destination_longitude"]
 
 const ticket = (line) => {
     return {
@@ -16,10 +27,12 @@ const ticket = (line) => {
         "originName": line[5],
         "originLatitude": line[6],
         "originLongitude": line[7],
+        "originWeather": "",
         "destinationIata": line[8],
         "destinationName": line[9],
         "destinationLatitude": line[10],
-        "destinationLongitude": line[11]
+        "destinationLongitude": line[11],
+        "destinationWeather": ""
     }
 }
 
@@ -31,9 +44,6 @@ const airPort = (iata, latitude, longitude) => {
         "weather": null
     }
 }
-
-const ENDPOINT_TOKET = 'a065225a805cdb89b19e56d08925f0a0'
-const WEATHER_ENDPOINT = `http://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&appid=${ENDPOINT_TOKET}`
 
 module.exports = {
     HEADERS: HEADERS,
