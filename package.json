@@ -27,5 +27,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.1.0"
+  },
+  "dependencies": {
+    "sync-rest-client": "^1.0.3"
   }
 }
