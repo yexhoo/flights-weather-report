@@ -175,9 +175,11 @@ $ ls -l  /home/yexhoo/Documents/report/
 
 ```js
 /* 
-* You can get the cache.json file that contains information about airports.
-* This files goings to be filled with new airports weather information
-* after each execution to improve next execution.
+The cache.json file is generated/populated after each execution (at root of project).
+If some airport weather information is needed, the process validates if that already 
+exist at this file. If does not exist, the proecess retrieve it from Open Weather 
+service. The cache.json file is updated with new value to be available for next 
+iteration. Otherwise the process uses it form cache.
 */
 {
     "airPorts":[
