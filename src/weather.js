@@ -6,7 +6,6 @@ const cache = require("./cache")
 exports.updateAirports = (airPorts) => {
 
     airPorts = this.cachedAirports(airPorts)
-
     let entries = airPorts.entries();
 
     for (let airport of entries) {
@@ -25,7 +24,6 @@ exports.updateAirports = (airPorts) => {
             }
         }
     }
-
     cache.save(airPorts)
 
     return airPorts
@@ -47,7 +45,6 @@ exports.updateTickets = (tickets, airPorts) => {
 exports.cachedAirports = (airPorts) => {
 
     const cached = cache.get()
-
     cached.airPorts.forEach(airport => {
         airPorts.set(airport.iata, airport)
     });
