@@ -179,7 +179,7 @@ The cache.json file is generated/populated after each execution (at root of proj
 If some airport weather information is needed, the process validates if that already 
 exist at this file. If does not exist, the proecess retrieve it from Open Weather 
 service. The cache.json file is updated with new value to be available for next 
-iteration. Otherwise the process uses it form cache.
+iteration. Otherwise the process uses it from cache.
 */
 {
     "airPorts":[
